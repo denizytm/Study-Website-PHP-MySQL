@@ -1,0 +1,147 @@
+nav {
+    z-index: 999;
+    background-color: #2a085c;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    top: -30px;
+    transition: 0.5s ease-in-out;
+}
+
+.icon-container {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left : 60px;
+}
+
+.icon-container img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.search-bar-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-container button {
+    border: none;
+    padding : 2px 5px;
+    background-color: white;
+    height: 30px;
+    width: auto;
+    color: black;
+    border-radius: 0;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.5s ease-in-out;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search-bar-container button img {
+    height: 20px;
+    width: auto;
+}
+
+.search-bar-container svg:hover {
+    border : 3px solid #bd2ab3;
+}
+
+.search-bar {
+    border: none;
+    height: 30px;
+    outline: none;
+    width: 95%;
+    padding-left: 5px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.navigation-container {
+    width: 45%;
+    display : flex;
+    justify-content: center;
+
+}
+
+.navigation-container ul {
+    margin-top: 0;
+    height: 100%;
+    display : flex;
+    align-items: center;
+    width: 75%;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation-container ul li {
+    background-color: #2a085c;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+.navigation-container ul .active {
+    background-color: rgb(79, 15, 121);
+    height: 85%;
+}
+
+.navigation-container ul .active a {
+    border-bottom: 2px solid #bd2ab3;
+}
+
+.navigation-container ul li a{
+    color : white;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    border-bottom: 2px solid white;   
+    padding-bottom: 5px;             
+}
+
+.navigation-container ul li a:hover {
+    border-bottom : 2px solid #bd2ab3;
+}
+
+.login-register-container {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    justify-content: end;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-right: 2%;
+    gap : 40px;
+}
+
+.login-register-container a {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2.5px solid white;
+    padding-bottom: 5px;
+    transition: 0.5s ease-in-out; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-register-container a:hover {
+    border-bottom: 2.5px solid #bd2ab3;
+}
