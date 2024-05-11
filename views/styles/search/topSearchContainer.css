@@ -1,0 +1,110 @@
+.top-search-container {
+    height: 230px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-top-search-container {
+        width: 75%;
+        background-color: #2a085c;
+        border: 5px solid white;
+        border-radius: 15px;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .top-inner-container {
+            display: flex;
+            justify-content: space-between;
+
+            .title-and-text {
+
+                .search-title {
+                    text-decoration: underline;
+                }
+
+                .search-title, .search-text {
+                    font-weight: bold;
+                    color: white;
+                }
+
+            }
+
+            .warning-text-container {
+                background-color: rgb(187, 176, 188);
+                border: 5px solid white;
+                padding: 5px;
+                border-radius: 15px;
+                height: 90px;
+                width: 40%;
+                opacity: 0;
+
+                span {
+                    cursor: default;
+                }
+
+            }
+
+            .warning {
+                opacity: 100%;
+            }
+
+        }
+
+        .bottom-inner-container {
+
+            .form-container {
+                width: 100%;
+                display: flex;
+
+                input {
+                    width: 90%;
+                    height: 50px;
+                    border: none;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    padding-left: 50px;
+                    box-sizing: border-box;
+                }
+            
+                button {
+                    width: 10%;
+                    background-color: rgb(99, 20, 136);
+                    border: none;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    color: white;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5%;
+
+                    .dot {
+                        background-color: white;
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 100%;
+                        transition: 0.5s ease-in-out;
+                    }
+
+                }
+
+                button:hover {
+                    .dot {
+                        background-color: rgb(146, 0, 114);
+                    }
+                }
+
+            }
+            
+
+        }
+
+    }
+
+}

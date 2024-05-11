@@ -1,0 +1,122 @@
+.bottom-progress-container {
+    background-color: rgb(199, 175, 202);
+    height: 920px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        width: 85%;
+        margin-bottom: 50px;
+
+        h1 {
+            margin-top: 40px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 15px;
+            border-bottom: 2px solid white;
+        }
+
+    }
+
+    .achievements-container {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+
+        .achievements {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+
+            .group {
+                width: 50%;
+                background-color: #210c3f;
+                border: 5px solid black;
+                border-radius: 15px;
+                padding-bottom: 25px;
+
+                h1 {    
+                    margin-top: 25px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: white;
+                }
+
+                .inner-group {
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    padding: 0;
+
+                    .achievement-container {
+                        padding: 15px;
+                        background-color: rgb(199, 175, 202);
+                        width: 90%;
+                        border: 5px solid black;
+                        border-radius: 15px;
+                        display: flex;
+                        
+                        .image-container {
+                            display: flex;
+                            align-items: center;
+                            width: 25%;
+
+                            .image {
+                                width : 80%;
+                                height: auto;
+                                border-radius: 0;
+                            }
+
+                        }
+
+                        .text-data {
+                            display: flex;
+                            width: 60%;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            .inner-title {
+                                margin-top: 5px;
+                                h5 {
+                                    color: white;
+                                    font-weight: bold;
+                                }
+
+                            }
+
+                            .inner-text {
+                                color: white;
+                            }
+
+                        }
+
+                        .done-container {
+                            display: flex;
+                            align-items: center;
+                            width: 15%;
+
+                            .image {
+                                width: auto;
+                                height: 50px;
+                                border-radius: 0;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
