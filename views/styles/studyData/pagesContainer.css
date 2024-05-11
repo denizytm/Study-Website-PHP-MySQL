@@ -1,0 +1,46 @@
+.pages {
+    background-color: rgb(99, 20, 136);
+    height: 93vh;
+    overflow-y: auto;
+
+    .title {
+        text-align: center;
+        padding: 25px 0;
+        border-bottom: 2px solid white;
+        color: white;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .titles-container {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding-inline-start: 0;
+        cursor: pointer;
+
+        .page-title-container{
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid white;
+            padding: 10px 0;
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+
+        }
+
+        .selected {
+            background-color: #2a085c;
+        }
+
+    }
+
+}
