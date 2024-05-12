@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] === "GET") {
             require pages("register.view.php");
         }
         if(!$userData) {
-            query("INSERT INTO users (firstName,lastName,email,password) VALUES(:firstName,:lastName,:email,:password)",[
+            query("INSERT INTO users (firstName,lastName,email,password,image) VALUES(:firstName,:lastName,:email,:password,:image)",[
                 "firstName" => $firstName,
                 "lastName" => $lastName,
                 "email" => $email,
