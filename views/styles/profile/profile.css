@@ -1,0 +1,22 @@
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 150px;
+    margin: 50px 0;
+
+    h1 {
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .image {
+        border-radius: 0;
+        height: 100px;
+        width: auto;
+
+    }
+
+}
