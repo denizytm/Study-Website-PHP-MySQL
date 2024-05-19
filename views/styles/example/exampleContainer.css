@@ -1,0 +1,154 @@
+.example-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-example-container {
+        height: 100%;
+        width: 100%;
+        background-color: #2a085c;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .title {
+            font-weight: bold;
+            margin-top: 50px;
+            font-size: 50px;
+        }
+
+        .question-container {
+            height: 70%;
+            width: 80%;
+            background-color: rgb(235, 241, 212);
+            display: flex;
+            flex-direction: column;
+            color: black;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+
+            .prev-button {
+                position: absolute;
+                left: 30px;
+                top: 50%;
+                background-color: #2a085c;
+                border: 5px solid black;
+                border-radius: 100%;
+        
+            }
+
+            .next-button {
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                background-color: #2a085c;
+                border: 5px solid black;
+                border-radius: 100%;
+            }
+
+            .question-title {
+                display: flex;
+                width: 70%;
+                padding: 30px 0;
+                font-weight: bold;
+                font-size: 25px;
+                background-color: rgb(199, 175, 202);
+                align-items: center;
+                justify-content: center;
+                border: 5px solid black;
+                border-radius: 15px;
+            }
+
+            .answers-container {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                width: 100%;
+                margin-top: 120px;
+
+                .top-answers {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    
+
+                    .answer {
+                        background-color: rgb(199, 175, 202);
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                        font-size: 20px;
+                        border: 5px solid black;
+                        border-radius: 15px;
+                        gap: 25px;
+
+                        .circle {
+                            height: 10px;
+                            width: 10px;
+                            background-color: white;
+                            border-radius: 100%;
+                            transition: 0.5s ease-in-out;
+                        }
+
+                    }
+          
+                    .answer:hover {
+                        .circle {
+                            background-color: #2a085c;
+                        }
+                    }
+
+                }
+
+                .bottom-answers {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .answer {
+                        background-color: rgb(199, 175, 202);
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                        font-size: 20px;
+                        border: 5px solid black;
+                        border-radius: 15px;
+                        gap: 25px;
+
+                        .circle {
+                            height: 10px;
+                            width: 10px;
+                            background-color: white;
+                            border-radius: 100%;
+                            transition: 0.5s ease-in-out;
+                        }
+
+                    }
+          
+                    .answer:hover {
+                        
+                        .circle {
+                            background-color: #2a085c;
+                        }
+
+                    }
+
+           
+                }
+
+            }
+
+        }
+
+    }
+
+}

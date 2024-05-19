@@ -1,0 +1,17 @@
+.bottom-search-container{
+    height: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+
+    .bottom-inner-search-container {
+        width: 75%;
+        display: grid;
+        gap: 5%;
+        grid-template-columns: 20% 75%;
+    }
+
+}
+

@@ -1,0 +1,280 @@
+.bottom-right-search-container {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    border: 5px solid white;
+    border-radius: 15px;
+    height: 1480px;
+    position: relative;
+
+    .inner-top-right-container {
+        background-color: #2a085c;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 5px solid white;
+
+        .inner-right  {
+            width: 90%;
+
+            .label h2{
+                color: white;
+                text-decoration: underline;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .input-container {
+                display: flex;
+ 
+                .by-publisher-container {
+                    width: 90%;
+                    border: none;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    padding-left: 15px;
+                }
+
+                .submit {
+                    width: 10%;
+                    border: none;
+                    color: white;
+                    background-color: rgb(99, 20, 136);
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 35px;
+                    gap: 10px;
+                    padding: 0 5px;
+
+                    .circle {
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 100%;
+                        background-color: white;
+                        transition: 0.5s ease-in-out;
+                    }
+
+                }
+
+                .submit:hover {
+
+                    .circle {
+                        background-color: purple;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+    
+    .inner-bottom-right-container {
+        background-color: rgb(187, 176, 188);
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
+
+        .data-list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: 0;
+            padding: 25px;
+            list-style-type: none;
+
+            .question {
+                background-color: rgb(99, 20, 136);
+                display: flex;
+                border: 5px solid white;
+                border-radius: 5px;
+                color: white;
+                box-sizing: content-box;
+
+                .image-container {
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    
+                    .image {
+                        width: 100%;
+                        height: 190px;
+                        border-radius: 0;
+                        object-fit: cover;
+                    }
+
+                }
+
+                .text-container {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #2a085c;
+                    cursor: default;
+
+                    .top-side {
+                        padding: 10px 0;
+                        padding-left: 25px;
+
+                        h3 a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        .user-profile-link {
+                            color: white;
+                            text-decoration: none;
+
+                            h5 {
+                                color: white;
+                            }
+
+                        }
+
+                        .user-profile-link:hover {
+                            text-decoration: underline;
+                        }
+
+                        .question-text {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        .question-text:hover {
+                            text-decoration: underline;
+                        }
+
+                    }
+
+                    .top-side h3 a:hover {
+                        text-decoration: underline;
+                    }
+
+                    .tags{
+                        font-size: small;
+                        margin-bottom: 5px;
+
+                        ul li {
+                            display: inline-block;
+                            margin-right: 20px;
+                            margin-top: 10px;
+                            padding-right: 3px;
+                            padding-left: 3px;
+                            border-radius: 2px;
+                            background-color: rgb(206, 206, 227);
+                        }
+                        
+
+                        ul li a {
+                            color: white;
+                        }
+
+                    }
+
+                    .bot-side {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: default;
+                        padding-bottom: 10px;
+
+                        .details-container {
+               
+                            ul {
+                                display: flex;
+                                gap: 15px;
+
+                                li {
+                                    display: inline-block;
+                                    font-size: smaller;
+                                    padding-right: 5px;
+                                    font-weight: 900;
+                                    color: white;
+    
+                                }
+
+                            }
+
+                        }
+                        
+                        
+                        .button {
+                            display: flex;
+                            justify-content: end;
+                            align-items: end;
+
+                            a {
+                                background-color: rgb(99, 20, 136);
+                                border: 3px solid black;
+                                color: white;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 70px;
+                                cursor: pointer;
+                                margin-right: 35px;
+                            }
+                            
+                            a:hover {
+                                text-decoration: underline;
+                            }
+
+                        }
+
+                    }
+                    
+                }
+
+            }
+
+        }
+
+        
+    }
+    
+    .prev-next-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        height: 50px;
+        align-items: center;
+        position: absolute;
+        bottom: 25px;
+        left: 32%;
+
+        form {
+            button {
+                text-decoration: none;
+                color: white;
+                background-color: #2a085c;
+                font-weight: bold;
+                padding: 10px 15px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #2a085c;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    }
+}
+
